@@ -2,13 +2,13 @@
   <mat-sidenav class="sidenav" mode="side"
   opened fixedInViewport="true" fixedTopGap="64">
     <mat-nav-list class="nav-list">
-      <a mat-list-item>
+      <a mat-list-item routerLink="/">  <!-- cria o link para acessar a página ex. localhost:8080/ -->
         <i class="material-icons">
           home
         </i>
         Inicio
       </a>
-      <a mat-list-item>
+      <a mat-list-item routerLink="/products">  <!-- cria o link para acessar a página ex. localhost:8080/products -->
         <i class="material-icons">
           storefront
         </i>
@@ -17,6 +17,6 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="content">
-    <app-home></app-home>
+    <router-outlet></router-outlet>  <!-- sempre que haver uma navegação os componentes serão substituidos neste ponto -->
   </mat-sidenav-content>
 </mat-sidenav-container>
