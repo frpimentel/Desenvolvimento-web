@@ -3,6 +3,5 @@ form{
   flex-direction: column;
 }
 button{
-  margin-right: 15px;
-  margin-top: 17px;
+  margin: 17px 15px 0px 0px;
 }
